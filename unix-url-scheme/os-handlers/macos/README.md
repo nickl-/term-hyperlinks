@@ -25,5 +25,22 @@ The goal was to get back to the shell as soon as possible so passing the url to 
 like the most logical approach which provides reusability with other OS implimentations. If we could skip the need for AppleScript and
 wrap the shell script as a macos app directly it would probably be better. Looking forward to hearing your thoughts on this.
 
-We provide an installable dmg, simply drag the app to Applications folder and you should be set.
+The real magic happens with the addition of the `CFBundleURLTypes` key to the `Info.plist` which registers the application as the scheme
+handler.
+
+```xml
+      <key>CFBundleURLTypes</key>
+      <array>
+              <dict>
+                      <key>CFBundleURLName</key>
+                      <string>unix socket scheme handler</string>
+                      <key>CFBundleURLSchemes</key>
+                      <array>
+                              <string>unix</string>
+                      </array>
+              </dict>
+      </array>
+```
+
+We provide an installable dmg file [unix-scheme-installer.dmg](unix-url-scheme/os-handlers/macos/unix-scheme-installer.dmg), simply drag the app to Applications folder and you should be set.
 
