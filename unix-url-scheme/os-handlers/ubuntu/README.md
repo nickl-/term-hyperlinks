@@ -10,7 +10,7 @@ Exec=socket-client.sh %u
 MimeType=x-scheme-handler/unix;
 ```
 
-We provide convenient installation bundle [unix-scheme-installer.tar.gz](https://github.com/nickl-/term-hyperlinks/raw/master/unix-url-scheme/os-handlers/ubuntu/unix-scheme-installer.tar.gz),
+We provide a convenient installation bundle [unix-scheme-installer.tar.gz](https://github.com/nickl-/term-hyperlinks/raw/master/unix-url-scheme/os-handlers/ubuntu/unix-scheme-installer.tar.gz),
 simply download and extract the files then execute `./install-ubuntu.sh` as root.
 
 Example:
