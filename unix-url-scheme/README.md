@@ -8,6 +8,8 @@ if host is omitted localhost is assumed
 
 ### Proof of concept:
 
+The poc simply uses `socat` to deal with the unix sockets, this can of course be implemented in many other ways. 
+
 **socket-client.sh** - parses unix:// uri, attempts to find socket file, sends remaining part of uri to socket if found and exits.
 
 **socket-server.sh** - Outputs some terminal hypertext links and proceeds to listen in a loop for messages at /tmp/test.sock. When a message is received it simply echos the message to stdout before closing. User is prompted wether to listen for another message.
