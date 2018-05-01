@@ -42,5 +42,5 @@ handler.
       </array>
 ```
 
-We provide an installable dmg file [unix-scheme-installer.dmg](unix-scheme-installer.dmg), simply drag the app to Applications folder and you should be set.
+We provide an installable dmg file [unix-scheme-installer.dmg](https://github.com/nickl-/term-hyperlinks/raw/master/unix-url-scheme/os-handlers/macos/unix-scheme-installer.dmg), simply drag the app to Applications folder and you should be set.
 
