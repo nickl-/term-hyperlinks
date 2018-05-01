@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=UnixScheme
+Comment=Unix domain socket uri scheme handler
+NoDisplay=true
+Exec=socket-client.sh %u
+Categories=System;
+MimeType=x-scheme-handler/unix;
+
