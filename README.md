@@ -52,7 +52,7 @@ rapid adoption and thus requires vested interest from the community to have any 
 
 ## Currently identified standards schemes
 
- 1. [unix](/nickl-/term-hyperlinks/tree/master/unix-url-scheme) - unix domain socket uri scheme
+ 1. [unix](/unix-url-scheme) - unix domain socket uri scheme
  1. fd - filedescriptor uri scheme
  1. exec - shell command execution uri scheme
  1. system - system command execution uri scheme
