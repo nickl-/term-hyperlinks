@@ -8,4 +8,4 @@ In order to be listed as permanent a standards track proposal has to be accepted
 
 It is not clear whether these protocols would even be onsidered by ietf as their internet applicability may be debateable. If ietf is not
 appropriate we should establish an alternative means to establish the same acceptance. Looking for more suggestions and ideas please start
-an issue this topic.
+an issue on this topic.
