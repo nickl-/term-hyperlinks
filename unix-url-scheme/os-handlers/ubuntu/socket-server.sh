@@ -13,7 +13,7 @@ a="`printf ' %.0s' {1..25}`"
 in='y'
 while [ "$in" == 'y' ] ; do
     echo -e "\n${a}Listening for unix:///tmp/test.sock links"
-    socat -u UNIX-LISTEN:/tmp/test.sock -
+    `/usr/bin/which socat` -u UNIX-LISTEN:/tmp/test.sock -
     read -p "${a}Listen for another link? y: " -N 1 -t 5 in
 done
 echo

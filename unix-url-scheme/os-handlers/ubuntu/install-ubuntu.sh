@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 apt -y install socat
-cp unix-handler.desktop /usr/share/applications/unix-handler.desktop
+cp unix-scheme.desktop /usr/share/applications/unix-scheme.desktop
 cp socket-client.sh /usr/local/bin/socket-client.sh
 update-desktop-database
 
