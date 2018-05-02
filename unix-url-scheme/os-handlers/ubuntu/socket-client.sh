@@ -3,7 +3,7 @@
 
 ! /usr/bin/which socat >/dev/null && echo -e "socat not found\nplease install socat and ensure it is in your path" && exit 1
 
-# based off https://stackoverflow.com/questions/6174220/parse-url-in-shell-script#answer-45977232
+# based on https://stackoverflow.com/questions/6174220/parse-url-in-shell-script#answer-45977232
 # with some corrections
 pattern='^(([^:/?#]+):?)(//((([^:/?#]*):?([^:/?#]*))@)?([^:/?#]*)(:([0-9]*))?)?(/([^?#]*))(\?([^#]*))?(#(.*))?'
 #         ↑↑            ↑  ↑↑↑           ↑             ↑         ↑ ↑           ↑ ↑        ↑  ↑        ↑ ↑
@@ -26,7 +26,8 @@ done
 
 [[ -n $soc ]] && echo "${msg#$soc}" | `/usr/bin/which socat` -u - UNIX-CLIENT:$soc || (
     echo -e "\nError for $scheme socket URL:\n$1"
-    echo -e "\nSocket @ '$soc' with message part:\n${msg/$soc/}" 
+    [[ ! -n $soc ]] && soc=${msg%\?*}
+    echo -e "Socket @ '$soc' with message part:\n${msg/$soc/}" 
     exit 1
 )
 
