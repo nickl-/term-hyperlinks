@@ -5,7 +5,7 @@
 
 # based off https://stackoverflow.com/questions/6174220/parse-url-in-shell-script#answer-45977232
 # with some corrections
-pattern='^(([^:/?#]+):?)(//((([^:/?#]+):?([^:/?#]*))@)?([^:/?#]+)(:([0-9]+))?)?(/([^?#]*))(\?([^#]*))?(#(.*))?'
+pattern='^(([^:/?#]+):?)(//((([^:/?#]*):?([^:/?#]*))@)?([^:/?#]*)(:([0-9]*))?)?(/([^?#]*))(\?([^#]*))?(#(.*))?'
 #         ↑↑            ↑  ↑↑↑           ↑             ↑         ↑ ↑           ↑ ↑        ↑  ↑        ↑ ↑
 #         |2 scheme     |  ||6 user      7 pass        8 host    | 10 port     | 12 rpath |  14 query | 16 fragment
 #         1 scheme:     |  |5 userinfo                           9 :…          11 path    13 ?…       15 #…
