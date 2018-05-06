@@ -4,12 +4,12 @@ No it's not what this project is about, but it is the definitive reason for it c
 
 Exactly a year ago, now... @egmontkob published a paper [Hyperlinks_in_Terminal_Emulators.md](https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda)
 and everyone thought this was a great idea. What he invisioned was to utilize the OSC - Operating System Command escape sequence (OSC 8) to enable the definition
-of hypertext link descriptors and for the first time since OSC 0 (changing the terminal window title) everyone seems to be in agreement and  on board with its implimentation.
-The OSC ansi category has been notoriously uncooperative with many bright ideas and implimentations, from clipboard access to command execution (could be thumbsucking need
+of hypertext link descriptors and for the first time since OSC 0 (changing the terminal window title) everyone seems to be in agreement and  on board with its implementation.
+The OSC ansi category has been notoriously uncooperative with many bright ideas and implementations, from clipboard access to command execution (could be thumbsucking need
 references), seldom finding widespread adaptation. Great work everyone. job well done!
 
 The defenition utilizes 2 OSC escape sequences to produce a link descriptor, one for the url definiton and the other to mark the close  which leaves the title unescaped and 
-thus non breaking in legacy compliant implimentations which should ignore the uncommon specification as de facto:
+thus non breaking in legacy compliant implementations which should ignore the uncommon specification as de facto:
 
     OSC 8 ; params ; url ST # 1st OSC opens anchor, specifies url
 
@@ -36,7 +36,7 @@ than a clue, arguably much more than those so called standards but it is just th
 
 # The home of uri schemes and standards for hypertext command shell integration
 
-As it turns out there are already many well thought out "standard" schemes in use as we speak. Their use, application and implimentation is arguably intuitive with little to no 
+As it turns out there are already many well thought out "standard" schemes in use as we speak. Their use, application and implementation is arguably intuitive with little to no 
 need for design we already know what they do. When I started on this discovery I could've sworn these schemes were already specified at [IANA uri schemes](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml)
 but to my surprise I found none. It obviously can't take much effort to get listed if there are things like **tool** and **content** listed, huh? Unfortunately 
 intuition is not enough... off-spec remains a good and valid reason for these designs no remain unadopted and therefor unimplimented. The sheer risk involved in implementing
@@ -46,7 +46,7 @@ Perhaps they are currently missing specification because these schemes aren't sp
 terminal the scope has now widened and uri's are not just internet related, we have a need to keep the functionality within process or at least have a means to return to the
 session. 
 
-This project aims to identify needs and requirements for proof of concept, standards and reference implimentations of terminal and command shell uri schemes. The goal is for
+This project aims to identify needs and requirements for proof of concept, standards and reference implementations of terminal and command shell uri schemes. The goal is for
 rapid adoption and thus requires vested interest from the community to have any impact or success. A call to arms, lets just do this.
 
 
